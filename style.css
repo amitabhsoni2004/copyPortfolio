@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-width: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    height: 80px;
+    width: 100vw;
+    border: 1px solid black;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hamburger {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+.logo {
+    display: grid;
+    place-content: center;
+    margin-left: 100px;
+}
+
+.logo h1 {
+    font-size: 35px;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #1500ffd7, #9f8ac8, #e6e5ed);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.listctn {
+    margin: 12px;
+    width: 50%;
+}
+
+.listctn ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-content: center;
+    align-items: center;
+    gap: 0px;
+    list-style: none;
+    padding: 12px;
+}
+
+.listctn ul li {
+    font-size: 23px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(67, 64, 64);
+    text-decoration: underline;
+}
+
+main {
+    width: 100vw;
+    /* border: 2px solid black; */
+}
+
+#Home {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.div1 {
+    height: 670px;
+    width: 50%;
+}
+
+.div2 {
+    height: 670px;
+    width: 50%;
+}
+
+.intro {
+    margin: 150px 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.intro h1 {
+    font-size: 55px;
+    position: relative;
+}
+
+.blink {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.blink hr {
+    border: 2px solid black;
+}
+
+.myname {
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+    animation: animetion 3s ease-in-out 0s;
+}
+
+.hi {
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+    animation: anime 1s ease-in-out 0s;
+}
+
+.intro button {
+    width: 150px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    animation: anime 4s ease-in-out 0s;
+}
+
+.intro button:hover {
+    background-color: blue;
+    transition: 1s;
+    border: 2px solid black;
+}
+
+.myImage {
+    height: 500px;
+    width: 440px;
+    margin: 85px 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 9px 18px 21px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.myImage img {
+    height: 500px;
+    width: 440px;
+    object-fit: cover;
+    object-position: top;
+}
+
+@keyframes anime {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes animetion {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+#skill {
+    background-color: #9898ec;
+    text-align: center;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.lang {
+    /* border: 2px solid black; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 200px;
+    width: 450px;
+}
+
+.tickimg {
+    height: 540px;
+    width: 560px;
+    background-color: aqua;
+    overflow: hidden;
+
+}
+
+.tickimg img {
+    height: 540px;
+    width: 560px;
+
+}
+
+.projects {
+    background-color: rgb(40 40 106);
+    color: white;
+}
+
+.project2 {
+    display: grid;
+}
+
+.project3 {
+    display: grid;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.pbtn {
+    height: 100px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.nbtn {
+    height: 100px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.p1 {
+    border: 5px solid aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    height: 600px;
+    width: 100vw;
+    position: relative;
+
+}
+
+.p1 img {
+    width: 100%;
+    /* position: fixed; */
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0px;
+}
+
+.p1 button {
+    padding: 15px 10px 15px 50px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    margin-top: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    /* position: relative;
+    top: -500px;
+    left: 20px;
+    z-index: 50; */
+}
+
+.zindex {
+    z-index: 100;
+    position: absolute;
+    top: 420px;
+    left: 400px;
+}
+
+.zindex1 {
+    z-index: 100;
+    position: absolute;
+    top: 450px;
+    left: 470px;
+}
+
+.p1 button:hover {
+    background-color: white;
+    color: black;
+    transition: 2s;
+    font-weight: 550;
+}
+
+.p1 svg {
+    margin: 3px 10px 0px 30px;
+}
+
+#contme {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.ctn1 {
+    height: 550px;
+    width: 50vw;
+    /* background-color: green; */
+}
+
+.ctn1 img {
+    height: 545px;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.ctndets {
+    height: 450px;
+    width: 50%;
+    margin: 30px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0px;
+}
+
+#userName {
+    padding: 20px;
+}
+
+#message {
+    padding: 10px 20px;
+}
+
+#sendmess {
+    width: 250px;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(40 40 106);
+    border: 2px solid black;
+}
+
+#sendmess:hover {
+    color: black;
+    background-color: white;
+    transition: 1s;
+
+}
+
+
+
+footer {
+    width: 100vw;
+    border: 2px solid black;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.abt {
+    height: 400px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.sm {
+    gap: 20px;
+}
+
+@media screen and (max-width:600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .listctn ul li {
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+    .listctn {
+        width: 100vw;
+        display: none;
+
+    }
+
+    .listctn1 {
+        position: fixed;
+        top: -12px;
+        left: -12px;
+
+        background: rgba(255, 255, 255, 0.31);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.42px);
+        -webkit-backdrop-filter: blur(3.42px);
+        border: 1px solid rgba(255, 255, 255, 1);
+
+        display: none;
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    .listctn ul {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .listctn ul li {
+        font-size: 23px;
+    }
+
+    .logo {
+        /* display: none; */
+        margin-left: 20px;
+    }
+
+    #hamburger {
+        display: block;
+        position: fixed;
+        top: 25px;
+        left: 88%;
+        z-index: 50;
+    }
+
+    #close {
+        position: fixed;
+        top: 25px;
+        left: 88%;
+        z-index: 50;
+    }
+
+    .div1 {
+        height: 300px;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .div2 {
+        height: 250px;
+        width: 100vw;
+        display: grid;
+        place-content: center;
+        z-index: -1;
+    }
+
+    .intro {
+        margin: auto;
+        padding: 10%;
+    }
+
+    .myImage {
+        height: 250px;
+        width: 250px;
+    }
+
+    .myImage img {
+        height: 250px;
+        width: 250px;
+    }
+
+    #Home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .skill {
+        margin: 20px 10px;
+        flex-direction: column;
+        row-gap: 50px;
+        padding: 0px;
+    }
+
+    .lang {
+        width: 100%;
+    }
+
+    .tickimg {
+        height: 320px;
+        width: 80vw;
+    }
+
+    .tickimg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    hr {
+        max-height: 35px;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+    }
+
+    .p1 {
+        height: 400px;
+        width: 90vw;
+    }
+
+    .p1 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .p1 button {
+        padding: 10px 0px 10px 20px;
+        font-size: 20px;
+    }
+
+    #about {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .abt {
+        height: 150px;
+    }
+
+    #contme {
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        height: 730px;
+    }
+
+    .manimg {
+        width: 85vw;
+        height: 260px;
+    }
+
+    .ctn1 img {
+        height: 245px;
+        width: 100%;
+    }
+
+    #sendmess {
+        width: 150px;
+        font-size: 16px;
+        padding: 10px 20px;
+
+    }
+
+    #form {
+        gap: 30px;
+    }
+
+    .ctndets {
+        width: 90vw;
+        height: 370px;
+    }
+
+
+    .project {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .project2 {
+        display: grid;
+    }
+
+    .project2 {
+        display: grid;
+    }
+
+    .zindex {
+        z-index: 100;
+        position: static;
+    }
+
+    .zindex1 {
+        z-index: 100;
+        position: static;
+        /* top: 450px;
+    left: 470px; */
+    }
+
+
+
+    .pbtn {
+        display: none;
+    }
+
+    .nbtn {
+        display: none;
+    }
+
+}
